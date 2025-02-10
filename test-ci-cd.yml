@@ -26,7 +26,7 @@ jobs:
       - name: Zip build file
         run: |
             cd out
-            zip -r build.zip
+            zip -r build.zip *
 
       - name: check build file
         run: ls -l
