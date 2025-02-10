@@ -27,6 +27,11 @@ jobs:
         run: |
             cd out
             zip -r build.zip *
-
-      - name: check build file
-        run: ls -l
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v3
+      
+    - name: check build file
+      run: ls -l
