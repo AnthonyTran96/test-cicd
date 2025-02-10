@@ -29,6 +29,11 @@ jobs:
             zip -r build.zip *
       - name: Check build file
         run: ls -l out/
+  test: 
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Check build file
+        run: ls -l out/
   
       
 
